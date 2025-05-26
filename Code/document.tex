@@ -1,0 +1,50 @@
+\documentclass[9pt]{amsart}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{mathrsfs, graphicx, tikz}
+\usepackage[left=3cm, right=3cm, bottom=3.4cm]{geometry}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+
+\renewcommand{\qedsymbol}{\emph{(end of proof)}}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+\renewcommand{\thetheorem}{\Roman{theorem}}
+
+\newtheorem{definition}{Definition}
+\renewcommand{\thedefinition}{\Roman{definition}}
+
+\newtheorem{lemma}{Lemma}
+\renewcommand{\thelemma}{\Roman{lemma}}
+
+\newtheorem{conjecture}{Conjecture}
+\renewcommand{\theconjecture}{\Roman{conjecture}}
+
+
+\title{\textbf{On the Square Peg Problem}}
+\author{Jayant Sharma}
+\date{\today}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\emph{On the Square Peg Problem, Jayant Sharma}}
+\fancyhead[R]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+The \emph{Square Peg Problem}, introduced by \emph{Otto Toeplitz} in 1911, asks whether every simple closed Jordan curve $C$ inscribes a square—that is, whether four points on $C$ can form the vertices of a square. To approach this, we introduce the notion of \emph{$4\text{-}\Delta$} sets and rotations, as a special case of the more general $^n\Delta_k$ configurations, defined as sets of $k$ lines in $n$-dimensional space with equal mutual angles.
+
+For $n = 2$ and $k = 4$, this configuration consists of two perpendicular line pairs (angle $\pi/2$). We prove that the continuous rotation of such a configuration over a Jordan curve causes the vertical and horizontal line pairs to swap positions. By the \emph{Intermediate Value Theorem}, this implies the existence of a moment when vertical and horizontal lines coincide in length, thus forming the diagonals of an inscribed square.
+\end{abstract}
+\tableofcontents
+
+\nocite{*}
+
+\bibliographystyle{plain}
+\bibliography{document}
+
+\end{document}
