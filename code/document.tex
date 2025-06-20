@@ -1,0 +1,58 @@
+\documentclass[9pt]{amsart}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{mathrsfs, graphicx, tikz}
+\usepackage[left=3cm, right=3cm, bottom=3.4cm]{geometry}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+
+\renewcommand{\qedsymbol}{\emph{(end of proof)}}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+\renewcommand{\thetheorem}{\Roman{theorem}}
+
+\newtheorem{definition}{Definition}
+\renewcommand{\thedefinition}{\Roman{definition}}
+
+\newtheorem{lemma}{Lemma}
+\renewcommand{\thelemma}{\Roman{lemma}}
+
+\newtheorem{conjecture}{Conjecture}
+\renewcommand{\theconjecture}{\Roman{conjecture}}
+
+
+\title{\textbf{Investigating square peg problem by Delta Rotations and surging}}
+\author{Jayant Sharma}
+\date{\today}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\emph{Investigating square peg problem by Delta Rotations and surging, Jayant Sharma}}
+\fancyhead[R]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+In 1911, Otto Toeplitz, a German mathematician, proposed the celebrated conjecture: \emph{Does every simple, closed, non-self-intersecting Jordan curve inscribe a square—that is, can four points on the curve always be found that form the vertices of a square?}
+
+Over the years, numerous partial results have deepened our understanding of this geometric-topological problem, with the conjecture being resolved for many special classes of curves. Yet, the general case for arbitrary Jordan curves remains unsolved.
+
+In this paper, we introduce a novel technique called the \textbf{method of delta-rotations}, which considers a configuration of two perpendicular line segments entirely contained within the interior of a Jordan curve. This configuration is rotated and slid along the curve’s periphery such that the orthogonality is preserved and all four endpoints remain on the curve.
+
+To maintain smooth and continuous mappings—and to avoid obstructions during deformation—we propose an additional technique called the \textbf{method of surging}, which shifts one of the lines parallel to the other, preserving orthogonality while circumventing local blockages.
+
+If, through this process, the perpendicular lines are shown to exchange lengths during their motion, then by continuity and the \emph{Intermediate Value Theorem}, there must exist a configuration where both lines attain equal lengths, thereby forming the diagonals of an inscribed square.
+\end{abstract}
+\tableofcontents
+
+\nocite{*}
+
+\input{sections/section-1}
+
+\bibliographystyle{plain}
+\bibliography{document}
+
+\end{document}
